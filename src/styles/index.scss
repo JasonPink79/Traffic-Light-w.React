@@ -1,13 +1,81 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.trafficstick{
+    background: black;
+    width: 30px;
+    height: 100px;
+}
 
-*/
+.lightbox{
+    background: black;
+    width: 140px;
+    height: 350px;
+    border-radius: 25px;
+}
+
+.light{
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+    border-radius: 50%;   
+}
+
+.red{
+    background: red;
+    &.selected{
+        box-shadow: -6px -6px 40px 6px rgb(197, 100, 100), 6px 6px 40px 6px rgb(197, 100, 100);
+    }
+    
+}
+
+.yellow{
+    background: yellow;
+    &.selected{
+        box-shadow: -6px -6px 40px 6px rgb(197, 195, 100), 6px 6px 40px 6px rgb(197, 195, 100);
+    }
+}
+
+.green{
+    background: green;
+    &.selected{
+        box-shadow: -6px -6px 40px 6px rgb(93, 189, 133), 6px 6px 40px 6px rgb(93, 189, 133);
+    }  
+    
+}
+
+.signalbox {
+    background: black;
+    margin-left: 40px;
+    height: 200px;
+    width: 200px;
+    color: white;
+    font-size: 125px;
+    border-radius: 25px;
+    color: #fff;  
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;    
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 20px #eff0b4, 0 0 30px #eff0b4, 0 0 40px #eff0b4, 0 0 50px #eff0b4, 0 0 60px #eff0b4;
+  }
+  to {
+    text-shadow: 0 0 0px #fff, 0 0 20px #ff4da6, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6;
+  }
+}
+
+.signalpole {
+    background: black;
+    height: 200px;
+    width: 50px;
+    margin-left: 40px;
+}
